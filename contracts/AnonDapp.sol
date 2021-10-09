@@ -51,7 +51,7 @@ contract AnonDapp is ERC721, Ownable {
       baseExtension = _baseExtension;
   }
   
-  function _baseURI() internal view virtual override returns (string memory) {
+  function getBaseURI() public view returns (string memory) {
     return baseURI;
   }
   
